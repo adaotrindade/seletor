@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paginação Rosa</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f3dbe4;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .paginacao {
+      background-color: #f8f8f8;
+      border: 1px solid #efb2c6;
+      border-radius: 16px;
+      box-shadow: 0 8px 18px rgba(214, 51, 108, 0.12);
+      overflow: hidden;
+    }
+
+    .paginacao > ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .paginacao > ul > li {
+      border-right: 1px solid #efc2d1;
+    }
+
+    .paginacao > ul > li:last-child {
+      border-right: none;
+    }
+
+    .paginacao > ul > li > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 66px;
+      text-decoration: none;
+      color: #ec4f87;
+      font-size: 18px;
+      font-weight: 700;
+      background-color: #f8f8f8;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    .paginacao > ul > li > a:hover {
+      background-color: #e56b98;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="paginacao">
+      <ul class="lista-paginacao">
+        <li class="item-paginacao"><a href="#">&laquo;</a></li>
+        <li class="item-paginacao"><a href="#">1</a></li>
+        <li class="item-paginacao"><a href="#">2</a></li>
+        <li class="item-paginacao"><a href="#">3</a></li>
+        <li class="item-paginacao"><a href="#">4</a></li>
+        <li class="item-paginacao"><a href="#">5</a></li>
+        <li class="item-paginacao"><a href="#">6</a></li>
+        <li class="item-paginacao"><a href="#">7</a></li>
+        <li class="item-paginacao"><a href="#">&raquo;</a></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
